@@ -1,0 +1,28 @@
+#include "rk3399-u-boot.dtsi"
+#include "rk3399-sdram-ddr3-1600.dtsi"
+
+
+/ {
+	chosen {
+		u-boot,spl-boot-order = &sdhci, &sdmmc;
+		stdout-path = "serial2:115200n8";
+	};
+};
+
+&i2c0 {
+	u-boot,dm-pre-reloc;
+};
+
+&rk808 {
+	u-boot,dm-pre-reloc;
+};
+
+&sdhci {
+	max-frequency = <25000000>;
+	u-boot,dm-pre-reloc;
+};
+
+&sdmmc {
+	max-frequency = <20000000>;
+	u-boot,dm-pre-reloc;
+};
