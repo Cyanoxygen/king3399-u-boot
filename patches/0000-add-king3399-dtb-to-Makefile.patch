@@ -1,0 +1,12 @@
+diff --git a/arch/arm/dts/Makefile b/arch/arm/dts/Makefile
+index a7e0d9f6..c2496194 100644
+--- a/arch/arm/dts/Makefile
++++ b/arch/arm/dts/Makefile
+@@ -144,6 +144,7 @@ dtb-$(CONFIG_ROCKCHIP_RK3399) += \
+ 	rk3399-khadas-edge.dtb \
+ 	rk3399-khadas-edge-captain.dtb \
+ 	rk3399-khadas-edge-v.dtb \
++	rk3399-king3399.dtb \
+ 	rk3399-leez-p710.dtb \
+ 	rk3399-nanopc-t4.dtb \
+ 	rk3399-nanopi-m4.dtb \
